@@ -17,3 +17,4 @@ $router->get('/web', function () use ($router) {
 $router->group(['prefix' => 'service', ], function () use ($router) {
     $router->get('pokemon',  ['uses' => 'PokemonesController@index']); // Mostar todos los registros
 });
+
